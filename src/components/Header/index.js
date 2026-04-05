@@ -42,7 +42,7 @@ header{
      );
      sections.forEach((s) => obs.observe(s));
      return () => obs.disconnect();
-   }, [setActive]);
+   }, [NAV,setActive]);
     return (
     <MainContaier>
      <header className="header">
