@@ -16,8 +16,7 @@ import Education from "./components/Portfolio/Education";
 
 
 function App() {
-   const [active, setActive] = useState("Home");
-   /* fade-up on scroll */
+    /* fade-up on scroll */
   useEffect(() => {
     const els = document.querySelectorAll(".fade-up");
     const obs = new IntersectionObserver(

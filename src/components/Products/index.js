@@ -73,7 +73,7 @@ button{
 
 export default function Products() {
 const dispatch = useDispatch();
-const { loading, products, err }= useSelector((state) => state.productsreducer);
+const { products}= useSelector((state) => state.productsreducer);
 const [cartLoading,setCartLoading]=useState({loading:false,id:null})
 
 useEffect(()=>{
@@ -95,7 +95,7 @@ setTimeout(() => {
       products?.map(item=>
       <div className='item'>
       <div className='product-image'>
-       <img src={item?.image} />
+       <img src={item?.image} alt={item?.title} />
       </div>
         <div className='title'>
           <h4>{item?.title}</h4>
@@ -113,7 +113,7 @@ setTimeout(() => {
         </div>
         <div className='add-cart'>
           {
-            cartLoading.loading && cartLoading.id == item.id ? <Button className='loading-cta' text={<CircularProgress />}/>
+            cartLoading.loading && cartLoading.id === item.id ? <Button className='loading-cta' text={<CircularProgress />}/>
             : <Button text="Add to Cart" onClick={()=>addToCart(item)} />
           }
         
