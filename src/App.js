@@ -16,7 +16,8 @@ import Education from "./components/Portfolio/Education";
 
 
 function App() {
-    /* fade-up on scroll */
+   const [active, setActive] = useState("Home");
+   /* fade-up on scroll */
   useEffect(() => {
     const els = document.querySelectorAll(".fade-up");
     const obs = new IntersectionObserver(
@@ -38,7 +39,7 @@ function App() {
       <div className="orb orb1" />
       <div className="orb orb2" />
       <div className="orb orb3" />
-        <Header go={go}/>
+        <Header go={go} active={active} setActive={setActive}/>
         <Hero  go={go}/>
         <About/>
         <Skills  go={go}/>

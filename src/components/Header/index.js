@@ -28,8 +28,8 @@ header{
 }
 }`
 
- function Header({go}) {
- const [active, setActive] = useState("Home");
+ function Header({go,active,setActive}) {
+
  const NAV = ["Home","About","Skills","Experience","Education","Contact"];
    /* active nav highlight */
    useEffect(() => {

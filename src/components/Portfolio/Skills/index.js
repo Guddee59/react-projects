@@ -27,7 +27,7 @@ const Skills = () => {
   { name: "REST APIs",    pct: 80 },
   { name: "SQL",          pct: 80 },
 ];
-    const TOOLS = ["GitHub","VS Code","Jira"];
+const TOOLS = ["GitHub","VS Code","Jira"];
 
   return (
    <section id="skills" className="section" style={{paddingTop:0}}>
