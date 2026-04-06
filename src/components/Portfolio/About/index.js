@@ -14,7 +14,7 @@ export default function About() {
           </div>
           <div className="about-cards">
             {[
-              { num: "3.1+", lbl: "Years Experience" },
+              { num: "5+", lbl: "Years Experience" },
               { num: "2",    lbl: "Companies" },
               { num: "7+",   lbl: "Technologies" },
               { num: "78%",  lbl: "B.Sc Score" },
